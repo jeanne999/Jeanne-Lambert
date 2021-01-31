@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@blue: #3399cc;
+
+body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    background-color: #2b81ac;
+    .all_wrap {
+        background-color: @blue;
+        margin: 25px;
+        padding: 35px 0 135px;
+        color: #fff;
+        height: 100%;
+        .container {
+            margin: 0 auto;
+            background-color: @blue;
+            max-width: 986px;
+            width: 90%;
+            .header {
+                font-family: 'Lucida Sans Unicode';
+                font-size: 21px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .weather_wrap {
+                margin: 35px 0;
+            }
+            .footer {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+ul {
+    background-color: #fff;
+    font-size: 0;
+    width: 100%;
+    padding: 2px;
+    li {
+        list-style: none;
+        display: inline-block;
+        height: 147px;
+        padding: 35px 0;
+        font-size: 22px;
+        text-align: center;
+        line-height: 37px;
+        width: calc(25% - 4px);
+        margin: 2px;
+        transition: all .2s ease-in;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.7;
+            margin: 10px;
+            .wi {
+                font-size: 38px;
+                padding-left: 10px;
+            }
+        }
+    }
+    .lisbon {
+        background-color: @blue;
+    }
+    .paris {
+        background-color: #33cccc;
+    }
+    .belgrade {
+        background-color: #996699;
+    }
+    .moscow {
+        background-color: #c24747;
+    }
+    .tel-avive {
+        background-color: #e2674a;
+    }
+    .cair {
+        background-color: #ffcc66;
+    }
+    .new-york {
+        background-color: #99cc99;
+    }
+    .new-delhi {
+        background-color: #669999;
+    }
+    .san-francisco {
+        background-color: #cc6699;
+    }
+    .tokyo {
+        background-color: #339966;
+    }
+    .sydney {
+        background-color: #666699;
+    }
+    &:hover {
+        li {
+            opacity: 0.7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.w-50 {
+    width: calc(50% - 4px);
+}
+
+.w-100 {
+    width: calc(100% - 4px);
+}

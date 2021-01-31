@@ -1,0 +1,80 @@
+@import 'reset';
+@import 'fonts';
+
+$serv-bg: #70bfff;
+$serv-text: #262626;
+
+
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.our-services {
+    background-color: $serv-bg;
+    padding: 159px 0 150px 0;
+    font-family: 'Raleway Bold', sans-serif;
+    .services_wrapp {
+        display: flex;
+        justify-content: space-between;
+        .services_menu {
+            width: 50%;
+            padding-left: 100px;
+            .services__link {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 400px;
+                padding-right: 100px;
+                background-color: #fff;
+                color: $serv-text;
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 20px;
+                line-height: 27px;
+                box-shadow: 0 2px 8px -3px #000;
+                transition: all .3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #9d9d9d;
+                    top: 0;
+                    right: 100px;
+                }
+                .services__link-svg {
+                    position: absolute;
+                    top: 27px;
+                    right: 20px;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+        .services-picture {
+            width: 50%;
+            padding-left: 100px;
+            position: relative;
+            .services__title {
+                position: absolute;
+                top: 28%;
+                left: 7%;
+                font-size: 90px;
+                color: #fff;
+                white-space: nowrap;
+            }
+            .services-img {
+                position: absolute;
+                top: -75px;
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,236 @@
+// variable value start
+
+$accent: #2ec06c;
+$fb-color: #385C8E;
+$tw-color: #00aced;
+$inst-color: #517fa4;
+$drib-color: #ff0084;
+$stand: 20px;
+
+// variable value end
+
+// common styles start
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 950px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+// common styles end
+
+
+body {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    color: #666;
+
+    .header {
+        margin: 100px 0 50px;
+        text-align: center;
+
+        .title {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 40px;
+            color: #202020;
+
+            & span {
+                font-weight: 700;
+                color: $accent;
+            }
+        }
+
+        .header__text {
+            font-family: 'Karla', sans-serif;
+        }
+    }
+
+    .feedback {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .social {
+            width: calc(33% - 10px);
+            // margin-right: $stand;
+
+            .social__items {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                & li {
+                    height: 140px;
+                    width: calc(50% - 10px);
+                    margin-bottom: 20px;
+
+                    &:last-child(),
+                    &:last-child(-1) {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        border: 1px solid;
+                        transition: all .3s ease;
+
+                        svg {
+                            width: 52px;
+                            height: 52px;
+                        }
+
+                        &.facebook {
+                            border-color: $fb-color;
+
+                            path {
+                                fill: $fb-color;
+                            }
+
+                            &:hover {
+                                background-color: $fb-color;
+                            }
+                        }
+
+                        &.twitter {
+                            border-color: $tw-color;
+
+                            path {
+                                fill: $tw-color;
+                            }
+
+                            &:hover {
+                                background-color: $tw-color;
+
+                            }
+                        }
+
+                        &.instagram {
+                            border-color: $inst-color;
+
+                            path {
+                                fill: $inst-color;
+                            }
+
+                            &:hover {
+                                background-color: $inst-color;
+                            }
+                        }
+
+                        &.dribble {
+                            border-color: $drib-color;
+
+                            path {
+                                fill: $drib-color;
+                            }
+
+                            &:hover {
+                                background-color: $drib-color;
+                            }
+                        }
+
+                        &:hover {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .user__form {
+            display: flex;
+            justify-content: space-between;
+            width: calc(67% - 10px);
+
+            input {
+                width: 100%;
+                border: 1px solid #bababa;
+                border-radius: 5px;
+                padding: 14px 20px;
+                margin-bottom: $stand;
+                outline-color: $accent;
+                font-size: 16px;
+                color: #666;
+            }
+
+            .message__text {
+                position: relative;
+                width: 100%;
+
+                #user__message {
+                    width: 580px;
+                    height: 164px;
+                    border-radius: 5px;
+                    padding: 15px 20px;
+                    outline-color: $accent;
+                    font-size: 16px;
+                    color: #666;
+                    resize: none;
+                }
+
+                .form__btn {
+                    position: absolute;
+                    bottom: 0;
+                    right: -2px;
+                    width: 40px;
+                    height: 164px;
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    background-color: $accent;
+                    cursor: pointer;
+
+                    .icon-paper-plane:before {
+                        content: "\f1d8";
+                        color: #fff;
+                        top: 50%;
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+
+        ::placeholder {
+            font-family: 'Asap', sans-serif;
+            font-style: italic;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #666;
+        }
+    }
+}
+
+.form__col {
+    width: calc(50% - 10px);
+}

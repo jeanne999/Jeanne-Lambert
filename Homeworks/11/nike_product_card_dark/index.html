@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike product card</title>
+    <link rel="stylesheet" href="assets/fonts/font.css">
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/css/star-rating-svg.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <section class="product">
+        <div class="container">
+            <div class="product__card">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Logotype" class="logo-pic">
+                </div>
+                <div class="product__card-info">
+                    <div class="product__card-photo">
+                        <img class="model-photo" src="assets/images/sneakers-photo.png" alt="Sneakers photo">
+                    </div>
+                    <div class="product__card-dots">
+                        <div class="dots dot1"></div>
+                        <div class="dots dot2"></div>
+                        <div class="dots dot3"></div>
+                        <div class="dots dot4"></div>
+                    </div>
+                    <div class="product__card-details">
+                        <h1 class="product__card-title">
+                            Nike SB Stefan Janoski Max
+                        </h1>
+                        <div class="product__card-description">
+                            Unisex Skateboarding Shoe
+                        </div>
+                        <div class="product-card__rate">
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="product-card__choose">
+                            <form action="#" class="product-card__form" name="size-qty">
+                                <select data-placeholder="Size" class="product-card__size choose" name="size" id="size" form="size-qty" required>
+                                    <option></option>
+                                    <option value="5" class="size__num">5</option>
+                                    <option value="6" class="size__num">6</option>
+                                    <option value="7" class="size__num">7</option>
+                                    <option value="8" class="size__num">8</option>
+                                    <option value="9" class="size__num">9</option>
+                                    <option value="10" class="size__num">10</option>
+                                    <option value="11" class="size__num">11</option>
+                                </select>
+                                <select data-placeholder="Qty" class="product-card__qty choose" name="quality" id="quality" form="size-qty" required>
+                                    <option></option>
+                                    <option value="1" class="qty__value">1</option>
+                                    <option value="2" class="qty__value">2</option>
+                                    <option value="3" class="qty__value">3</option>
+                                    <option value="4" class="qty__value">4</option>
+                                    <option value="5" class="qty__value">5</option>
+                                    <option value="6" class="qty__value">6</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="add">
+                            <button class="add-to-card" type="submit" form="size-qty">Add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="assets/js/jquery.star-rating-svg.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

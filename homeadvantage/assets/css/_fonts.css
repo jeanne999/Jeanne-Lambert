@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans Semibold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/OpenSans-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+}

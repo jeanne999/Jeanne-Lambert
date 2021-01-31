@@ -1,0 +1,97 @@
+// COMMON STYLES START
+@font-face {
+    font-family: 'Lato Light';
+    src: url("../fonts/lato-light.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url("../fonts/miso.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+// COMMON STYLES END
+
+body {
+    background-color: #fdde7e;
+    font-family: 'Lato Light';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #333;
+    text-align: center;
+    .cups__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+        .cup {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            width: calc(33.3333% - 20px);
+            height: 442px;
+            border-radius: 4px;
+            box-shadow: 0px 3px 4px -1px rgba(0,0,0,.35);
+            transition: all .3s ease;
+            padding: 41px 0 35px;
+            &.cup:hover {
+                box-shadow: 0 0 4px 4px rgba(2,153,91,.35);
+            }
+            .cup_icon {
+                margin: 4px 0 47px 20px;
+                background: url(../images/sprite_cups.png);
+                width: 137px;
+                height: 135px;
+            }
+            &.cup_bronze .cup_icon {
+                background-position: 0 0;
+                
+            }
+            &.cup_gold {
+                height: 503px;
+                padding: 52px 0 55px;
+                .cup_icon {
+                    background-position: -161px 0;
+                    margin: 22px 0 56px 20px;
+                }
+            }
+            &.cup_silver .cup_icon {
+                background-position: 136px 0;
+            }
+            .cup_price {
+                font-family: 'Miso';
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 70px;
+                letter-spacing: 1px;
+                color: #02995b;
+            }
+            
+            .cup_name {
+                display: block;
+                font-family: 'Miso';
+                font-size: 56px;
+                font-weight: 400;
+                margin-bottom: 27px;
+            }
+            .cup_text {
+                width: 160px;
+                letter-spacing: 0.4px;
+            }
+        }
+    }
+}
+

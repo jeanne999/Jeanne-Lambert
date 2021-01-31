@@ -1,0 +1,144 @@
+// import
+@import 'reset';
+@import 'fonts';
+
+// import
+// ----
+// common styles
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 90%;
+}
+
+.section__top-width {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.lato-bold {
+    font-family: 'Lato Bold', sans-serif;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+// common styles
+// ----
+body {
+    .about-us {
+        padding: 100px 0;
+        font-family: 'Lato Light', sans-serif;
+        font-weight: 300;
+
+        .about-us__top {
+            text-align: center;
+            color: #3c3c3c;
+            margin-bottom: 55px;
+
+            .about-us__title {
+                font-size: 34px;
+                text-transform: uppercase;
+                position: relative;
+                margin-bottom: 55px;
+                letter-spacing: 4px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 4px;
+                    width: 45px;
+                    background-color: #dddbdb;
+                    bottom: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .about-us__description {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        .about-us__team {
+            display: flex;
+            justify-content: space-between;
+
+            .about-us__team-item {
+                background-color: transparent;
+                width: calc(25.5% - 30px);
+                height: 271px;
+                perspective: 1000px;
+
+                .about-us__name {
+                    font-size: 18px;
+                    color: #282528;
+                }
+
+                .about-us__position {
+                    font-size: 14px;
+                    color: #646464;
+                }
+            }
+
+            .about-us__team-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                margin-bottom: 16px;
+            }
+
+            .about-us__team-item:hover .about-us__team-inner {
+                transform: rotateY(180deg);
+            }
+
+            .about-us__photo,
+            .about-us__social {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .fabout-us__photo {
+                background-color: #bbb;
+                color: black;
+            }
+
+            .about-us__social {
+                background-color: #18b5dc;
+                color: #fff;
+                transform: rotateY(180deg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .social__link {
+                    display: block;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: center;
+                    padding: 8px 0;
+                    color: #fff;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 4px;
+                    background-color: #5ecbe7;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        background-color: #F5F8FA;
+                        color: #1DA1F2;
+                    }
+                }
+            }
+        }
+    }
+}

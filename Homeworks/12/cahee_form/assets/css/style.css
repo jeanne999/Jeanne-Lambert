@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+.btn {
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "Raleway Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Raleway Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Raleway-Bold.woff") format("woff");
+}
+.container {
+  max-width: 1170px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  width: 100%;
+  background-image: url(../images/cahee-form-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  font-family: "Raleway Light", sans-serif;
+  color: #262626;
+}
+.contact-form .contact-form__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.contact-form .contact-form__top .contact-form__title {
+  font-family: "Raleway Bold", sans-serif;
+  font-size: 90px;
+  margin-bottom: 45px;
+}
+.contact-form .contact-form__top .contact-form__text {
+  max-width: 346px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 25px;
+}
+.contact-form .contact-form__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 118px;
+}
+.contact-form .contact-form__content .form__wrapp {
+  width: 50%;
+  padding-right: 85px;
+}
+.contact-form .contact-form__content .form__wrapp .user-data,
+.contact-form .contact-form__content .form__wrapp .user-message {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Raleway Bold";
+  padding: 20px;
+  margin-bottom: 15px;
+  border: none;
+  color: #fff;
+  background-color: rgba(0, 196, 196, 0.7);
+  outline: none;
+  border-left: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+.contact-form .contact-form__content .form__wrapp .user-data::placeholder,
+.contact-form .contact-form__content .form__wrapp .user-message::placeholder {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Raleway Light";
+}
+.contact-form .contact-form__content .form__wrapp .user-data:focus,
+.contact-form .contact-form__content .form__wrapp .user-message:focus {
+  border-left: 5px solid #355b82;
+  background-color: #00c4c4;
+}
+.contact-form .contact-form__content .form__wrapp .user-message {
+  resize: none;
+  height: 250px;
+}
+.contact-form .contact-form__content .form__wrapp .user-data {
+  height: 50px;
+}
+.contact-form .contact-form__content .form__wrapp .user-data__send {
+  display: block;
+  width: 200px;
+  height: 57px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 25px;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Raleway Light", sans-serif;
+  box-shadow: 0 2px 5px -3px #000;
+  text-align: center;
+  padding: 17px 0;
+  background-color: #355b82;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #fff;
+}
+.contact-form .contact-form__content .form__wrapp .user-data__send:hover {
+  transform: scale(1.05);
+}
+.contact-form .contact-form__content .contact-form__info {
+  width: 50%;
+  padding-left: 85px;
+}
+.contact-form .contact-form__content .form__info-name {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: "Raleway Bold", sans-serif;
+}
+.contact-form .contact-form__content .form__info-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contact-form .contact-form__content .form__info-text a {
+  color: #262626;
+}
+.contact-form .contact-form__content .email a {
+  transition: all 0.5s ease;
+}
+.contact-form .contact-form__content .email a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #262626;
+  color: #b9b9b9;
+  font-family: "Raleway Light", sans-serif;
+}
+.footer .footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.footer .footer__inner .footer__copy {
+  font-size: 16px;
+}
+.footer .footer__inner .footer__text {
+  font-size: 15px;
+}
+.footer .footer__inner .footer__text span {
+  color: #ff2b58;
+  font-family: "Raleway Bold", sans-serif;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike product card</title>
+    <link rel="stylesheet" href="assets/css/star-rating-svg.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header_logo">
+                <img class="logo" src="assets/images/logo.png" alt="Nike logo">
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-items">
+                    <li class="header__menu-item">
+                        <a href="#" class="link header__menu-link">
+                            Lifestyle
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="link header__menu-link">
+                            Running
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="link header__menu-link">
+                            Football
+                        </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="link header__menu-link">
+                            Skateboarding
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <span class="hamburger-menu__box"></span>
+            </div>
+        </header>
+        <section class="product-card">
+            <div class="product-card__gallery">
+                <div class="title">
+                    Huarache
+                </div>
+                <div class="product-card__photo">
+                    <img class="photo" src="assets/images/sneakers.png" alt="product photo">
+                </div>
+                <div class="slides">
+                    <a href="#" class="slides__pic"><img src="assets/images/slide1.jpg" alt="product photo"></a>
+                    <a href="#" class="slides__pic"><img src="assets/images/slide2.jpg" alt="product photo"></a>
+                    <a href="#" class="slides__pic"><img src="assets/images/slide3.jpg" alt="product photo"></a>
+                </div>
+                <span class="add-small"></span>
+            </div>
+
+            <div class="product-card__info">
+                <span class="close"></span>
+                <span class="badge">New</span>
+                <h1 class="product-card__title">The <span class="title-accent">running</span> has just begun</h1>
+                <div class="product-card__rate">
+                    <span class="rate-description">Huarache</span>
+                    <div class="my-rating"></div>
+                </div>
+                <div class="product-card__price">$&nbsp;200</div>
+                <div class="product-card__size">
+                    <div class="size-list-name">Size</div>
+                    <ul class="size-list">
+                        <li class="size-list-item">
+                            <input name="size" id="size_1" class="size-num" type="radio" value="7">
+                            <label class="size-num-text" for="size_1">7</label>
+                        </li>
+                        <li class="size-list-item">
+                            <input name="size" id="size_2" class="size-num" type="radio" value="8">
+                            <label class="size-num-text" for="size_2">8</label>
+                        </li>
+                        <li class="size-list-item">
+                            <input name="size" id="size_3" class="size-num" type="radio" value="9">
+                            <label class="size-num-text" for="size_3">9</label>
+                        </li>
+                        <li class="size-list-item">
+                            <input name="size" id="size_4" class="size-num" type="radio" value="10">
+                            <label class="size-num-text" for="size_4">10</label>
+                        </li>
+                        <li class="size-list-item">
+                            <input name="size" id="size_5" class="size-num" type="radio" value="11">
+                            <label class="size-num-text" for="size_5">11</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__buttons">
+                    <a href="#" class="btn btn-card">
+                        Add to card
+                    </a>
+                    <a href="#" class="btn btn-wish">
+                        Wishlist
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.star-rating-svg.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

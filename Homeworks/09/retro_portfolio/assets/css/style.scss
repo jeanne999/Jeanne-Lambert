@@ -1,0 +1,224 @@
+@import 'reset';
+@import 'fonts';
+$title-grey: #393a3a;
+
+// COMMON STYLES START
+
+.container {
+    max-width: 1890px;
+    width: 93%;
+    margin: 0 auto;
+}
+
+
+// COMMON STYLES END
+
+body {
+    background: url(../images/portfolio-bg.jpg);
+
+    .body__inner {
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-top: 1px dashed #aa684f;
+            border-bottom: 1px dashed #e6a288;
+            left: 0;
+        }
+
+        &::before {
+            top: 36px;
+        }
+
+        &::after {
+            bottom: 36px;
+        }
+    }
+
+    .portfolio__top {
+        padding: 100px 0 72px;
+        text-align: center;
+
+        .portfolio__title h1 {
+            font-family: 'Bazar Regular';
+            font-size: 180px;
+            line-height: 220px;
+            text-transform: uppercase;
+            text-shadow: #fff 4px 3px 0, #484a4d 8px 6px 0;
+            color: $title-grey;
+        }
+
+        .portfolio__title span {
+            display: inline-block;
+            font-family: 'Roboto Slab Regular';
+            font-size: 44px;
+            line-height: 16px;
+            color: $title-grey;
+            position: relative;
+            margin-bottom: 5px;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 4px;
+                background-color: $title-grey;
+                top: 50%;
+            }
+
+            &::before {
+                left: -100px;
+            }
+
+            &::after {
+                right: -100px;
+            }
+        }
+
+        .portfolio__description {
+            font-family: 'Oswald Regular';
+            text-transform: uppercase;
+            font-size: 34px;
+            line-height: 58px;
+            color: #38353e;
+        }
+    }
+
+    .postfolio__filter {
+        margin-bottom: 13px;
+
+        .tags {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            li {
+                margin-bottom: 20px;
+
+                &:first-child {
+                    font-family: 'Roboto Slab Regular';
+                    font-size: 32px;
+                    line-height: 42px;
+                    color: #383a3c;
+                }
+
+                +li {
+                    margin-left: 43px;
+                }
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 0 4px 4px 0;
+                    padding: 0 15px 0 25px;
+                    height: 48px;
+                    background-color: #fff;
+                    box-shadow: 3px 2px 3px rgba(0,0,0,.3);
+                    font-family: 'Roboto Slab Bold';
+                    font-size: 24px;
+                    line-height: 52px;
+                    color: #383a3c;
+                    white-space: nowrap;
+
+                    &::before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        top: 0;
+                        left: -25px;
+                        border-right: 25px solid #fff;
+                        border-top: 24px solid transparent;
+                        border-bottom: 24px solid transparent;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: #959ca3;
+                        left: 0;
+                        top: 22px;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio__content {
+        padding-bottom: 127px;
+    }
+    .portfolio__content-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+
+        .content__item {
+            width: calc(25% - 30px);
+            margin-bottom: 40px;
+            .content__link {
+                display: block;
+                background-color: #fff;
+                box-shadow: 3px 2px 3px rgba(0,0,0,.3);
+                color: #383a3c;
+                text-transform: uppercase;
+                border-radius: 5px;
+                text-align: center;
+                font-family: 'Roboto Slab Bold';
+                font-size: 24px;
+                line-height: 22px;
+                padding: 10px;
+                transition: all .3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
+                img {
+                    width: 100%;
+                }
+                .content__link-bottom {
+                    padding: 65px 0 21px 0;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: -22px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #fff;
+                        border-radius: 50%;
+                        width: 88px;
+                        height: 88px;
+                        color: #828c8e;
+                        font-size: 50px;
+                        line-height: 96px;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio__content-browse {
+        text-align: center;
+        .browse__link {
+            position: relative;
+            text-transform: uppercase;
+            font-family: 'Oswald Bold';
+            font-size: 28px;
+            line-height: 22px;
+            color: #38353e;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 5px;
+                background-color:#38353e;
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@import 'reset';
+@import 'fonts';
+
+$black: #262626;
+
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    width: 100%;
+    background-image: url(../images/cahee-form-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    font-family: 'Raleway Light', sans-serif;
+    color: $black;
+
+    .contact-form__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 45px;
+
+        .contact-form__title {
+            font-family: 'Raleway Bold', sans-serif;
+            font-size: 90px;
+            margin-bottom: 45px;
+        }
+
+        .contact-form__text {
+            max-width: 346px;
+            text-align: center;
+            font-size: 17px;
+            line-height: 25px;
+        }
+    }
+
+    .contact-form__content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 118px;
+
+        .form__wrapp {
+            width: 50%;
+            padding-right: 85px;
+
+            .user-data,
+            .user-message {
+                display: block;
+                width: 100%;
+                font-size: 15px;
+                font-family: 'Raleway Bold';
+                padding: 20px;
+                margin-bottom: 15px;
+                border: none;
+                color: #fff;
+                background-color: rgba(0, 196, 196, 0.7);
+                outline: none;
+                border-left: 5px solid transparent;
+                transition: all .3s ease;
+
+                &::placeholder {
+                    color: #fff;
+                    font-size: 15px;
+                    font-family: 'Raleway Light';
+                }
+
+                &:focus {
+                    border-left: 5px solid #355b82;
+                    background-color: #00c4c4;
+                }
+            }
+
+            .user-message {
+                resize: none;
+                height: 250px;
+            }
+
+            .user-data {
+                height: 50px;
+            }
+
+            .user-data__send {
+                display: block;
+                width: 200px;
+                height: 57px;
+                margin: 0 auto;
+                font-size: 20px;
+                line-height: 25px;
+                border: none;
+                text-transform: uppercase;
+                font-family: 'Raleway Light', sans-serif;
+                box-shadow: 0 2px 5px -3px #000;
+                text-align: center;
+                padding: 17px 0;
+                background-color: #355b82;
+                transition: all .3s ease;
+                cursor: pointer;
+                color: #fff;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .contact-form__info {
+            width: 50%;
+            padding-left: 85px;
+
+        }
+
+        .form__info-name {
+            text-transform: uppercase;
+            font-size: 17px;
+            line-height: 25px;
+            font-family: 'Raleway Bold', sans-serif;
+        }
+
+        .form__info-text {
+            font-size: 20px;
+            margin-bottom: 20px;
+            a {
+                color: $black;
+            }
+        }
+
+        .email a {
+            transition: all .5s ease;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $black;
+    color: #b9b9b9;
+    font-family: 'Raleway Light', sans-serif;
+
+    .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+
+        .footer__copy {
+            font-size: 16px;
+        }
+
+        .footer__text {
+            font-size: 15px;
+
+            span {
+                color: #ff2b58;
+                font-family: 'Raleway Bold', sans-serif;
+            }
+        }
+    }
+}

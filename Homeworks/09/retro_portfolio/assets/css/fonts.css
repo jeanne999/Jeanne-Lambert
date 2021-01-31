@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Bazar Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Bazar.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RobotoSlab-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto Slab Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RobotoSlab-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Oswald-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Oswald Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Oswald-Bold.woff") format("woff");
+}

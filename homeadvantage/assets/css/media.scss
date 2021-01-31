@@ -1,0 +1,504 @@
+$text-color: #003144;
+$light-blue: #7fddeb;
+$middle-blue: #0099bd;
+$blue: #0076a3;
+$gray: #c2c2c2;
+$light-gray: #e0e0e0;
+$red: #f93f20;
+$OSSemibold: 'Open Sans Semibold',
+sans-serif;
+
+@media (max-width:1290px) {
+    main .checked .checked__inner .checked__items .checked__item {
+        width: calc(33.33% - 45px);
+    }
+}
+
+@media (max-width: 1200px) {
+
+    main .checked .checked__inner .checked__items .checked__item .checked__text {
+        font-size: 22px;
+    }
+
+    main .partners .partners__inner .partners__slider .slick-arrow.slick-prev {
+        left: -20px;
+    }
+
+    main .partners .partners__inner .partners__slider .slick-arrow.slick-next {
+        right: -20px;
+    }
+
+    main .review .review__inner .light-quotes {
+        right: -20px;
+        bottom: -50px;
+    }
+
+    main .review .review__inner .dark-quotes {
+        left: -30px;
+    }
+
+    main .register .register__inner .register__items .register__item .register__title {
+        font-size: 30px;
+        line-height: 44px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .header .header__inner .local {
+        right: 2%;
+    }
+
+    main .register .register__inner .register__items .register__item .register__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    main .register .register__inner .register__items .register__item .icon__wrapper {
+        padding: 0 22px;
+
+        &::before {
+            left: -20px;
+            width: 150px;
+            height: 100px;
+        }
+
+        .register__icon {
+            width: 70%;
+            height: 80%;
+        }
+    }
+
+    main .register .register__inner .register__items .register__item .num__wrapper {
+        width: 50px;
+        height: 70px;
+
+        &::before {
+            border-top: 70px solid #e0e0e0;
+            border-left: 57px solid transparent;
+            left: -57px;
+        }
+
+        span {
+            font-size: 50px;
+            line-height: 70px;
+        }
+    }
+
+    main .checked .checked__inner {
+        border-left: 20px solid #fff;
+        border-right: 20px solid #fff;
+
+        .checked__items .checked__item {
+            width: calc(33.33% - 25px);
+            padding-left: 30px;
+
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .header .header__logo img {
+        width: 80%;
+    }
+
+
+    main .register .register__inner .register__items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .register__item {
+            min-width: 310px;
+            margin-bottom: 40px;
+
+
+            .num__wrapper {
+                top: 15px;
+                right: 0;
+                width: 64px;
+                height: 80px;
+
+                &::before {
+                    left: -64px;
+                    bottom: 0;
+                    border-left: 64px solid transparent;
+                    border-top: 80px solid $light-gray;
+                }
+
+                span {
+                    font-size: 72px;
+                    line-height: 76px;
+                }
+            }
+
+            .register__title {
+                font-size: 36px;
+                line-height: 52px;
+            }
+
+            .register__text {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+    }
+
+    main .register .register__inner .btn-wrapp .register-btn {
+        font-size: 26px;
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    main .checked .checked__inner .checked__items .checked__item .checked-mark {
+        width: 100px;
+    }
+
+    main .checked .checked__inner .checked__items .checked__item .checked__text {
+        font-size: 20px;
+    }
+
+    .footer .footer__inner {
+        padding: 40px 0;
+
+        .footer__logo img {
+            width: 80%;
+        }
+
+        .footer__logo .footer__copy {
+            margin: 2px 0 0 70px;
+        }
+
+        .footer__menu {
+            width: 70%;
+            padding-top: 10px;
+
+            .footer__item {
+                width: 33.33%;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    main .checked .checked__inner .checked__items .checked__item .checked__text {
+        font-size: 16px;
+    }
+
+    main .register .register__inner .register__items {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        padding: 15px 0;
+
+        &.scrolled .header__inner .local {
+            top: -22px;
+        }
+
+        .header__inner .enter__items {
+            margin-right: 20px;
+        }
+
+        .header__inner .local {
+            border-bottom: 32px solid #0076a3;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            top: -16px;
+            right: 5%;
+
+            &::before {
+                border-top: 32px solid #0076a3;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                top: 32px;
+                left: -25px;
+            }
+
+            .local__link {
+                top: 22px;
+            }
+        }
+    }
+
+    main {
+        margin-top: 78px;
+
+        .first-screen .first-screen__content .first-screen__title {
+            font-size: 64px;
+            line-height: 74px;
+        }
+
+        .first-screen .first-screen__content .first-screen__text {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        .checked .checked__inner {
+            padding: 80px 30px 0;
+
+            .checked__items {
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .checked__item {
+                    width: 100%;
+                    margin-bottom: 40px;
+
+                    .checked-mark {
+                        top: -45px;
+                        left: -40px;
+                    }
+
+                    .checked__text {
+                        max-height: 90px;
+                        min-height: 74px;
+                    }
+                }
+            }
+        }
+
+        .register .register__inner .register__items {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .review .review__inner .review__content {
+            padding: 40px 70px;
+
+            .review__text::before {
+                left: -35px;
+            }
+        }
+    }
+
+    .footer .footer__inner {
+        flex-wrap: wrap;
+
+        .footer__logo {
+            order: 1;
+            margin: 0 auto;
+
+            & img {
+                width: 100%;
+            }
+
+            .footer__copy {
+                margin: 2px 0 0 100px;
+            }
+        }
+
+        .footer__menu {
+            width: 100%;
+            padding-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .header .header__inner {
+        .header__logo {
+            position: relative;
+            overflow: hidden;
+            width: 80px;
+            height: 54px;
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80px;
+                max-height: 54px;
+                height: 90%;
+                object-position: left;
+                object-fit: cover;
+            }
+        }
+
+        .local {
+            right: 30px;
+        }
+    }
+
+    main .register,
+    main .review,
+    main .checked,
+    main .partners {
+        margin-bottom: 90px;
+    }
+}
+
+@media (max-width: 510px) {
+
+    .header .header__inner .enter__items .enter__item .enter__link {
+        padding: 10px 10px;
+    }
+
+    main .first-screen .first-screen__content {
+        .first-screen__title {
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        .first-screen__text {
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+
+    main .review .review__inner {
+        .review__content {
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            .review__text::before {
+                display: none;
+            }
+            
+        }
+
+        .dark-quotes {
+            left: 0;
+        }
+
+        .light-quotes {
+            width: 150px;
+            height: 64px;
+            right: 0;
+            bottom: -45px;
+        }
+    }
+
+    .footer .footer__inner {
+        .footer__menu {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .footer__item {
+                width: calc(50% - 15px);
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .footer__logo {
+            width: 90%;
+            .footer__copy {
+                margin: 20px 0;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .header {
+        padding: 2px 0;
+        &.scrolled {
+            padding: 0;
+            .header__inner .local {
+                top: -24px;
+                right: 40px;
+            }
+        }
+        .header__inner {
+            .enter__items {
+                flex-direction: column;
+                margin-right: 30px;
+                .enter__item:first-child {
+                    border-bottom: 1px dotted #7fddeb;
+                    border-right: none;
+                }
+                .enter__item .enter__link::before {
+                    display: none;
+                }
+            }
+            .local {
+                right: 40px;
+            }
+        }
+    }
+    main .first-screen .first-screen__content .first-screen__title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    main .first-screen .first-screen__content .first-screen__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    main .register .register__inner {
+        .register__items {
+            width: 90%;
+            .register__item {
+                width: 90%;
+                min-width: 0;
+                .register__title {
+                    font-size: 26px;
+                    line-height: 46px;
+                }
+            }
+        }
+        .btn-wrapp .register-btn {
+            width: 84%;
+        }
+    }
+    
+    
+
+    main .checked .checked__inner {
+        border-left: 15px solid #fff;
+        border-right: 15px solid #fff;
+        .checked__items .checked__item .checked-mark {
+            left: -35px;
+            top: -37px;
+            width: 80px;
+        }
+    }
+
+    main .partners .partners__inner {
+        width: 90%;
+    }
+
+    main .review .review__inner .review__content {
+        width: 90%;
+        .review__text,
+        .review__name {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    main .review .review__inner .dark-quotes {
+        left: -15px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    main .register .register__inner .register__items .register__item {
+        .icon__wrapper::before {
+            left: -35px;
+        }
+
+        .num__wrapper {
+            width: 50px;
+        }
+
+        .icon__wrapper {
+            padding: 5px 40px 0 10px;
+        }
+    }
+
+    .footer .footer__inner .footer__menu .footer__item {
+        width: 50%;
+    }
+}

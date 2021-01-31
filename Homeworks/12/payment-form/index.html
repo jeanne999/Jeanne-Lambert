@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Payment form</title>
+</head>
+
+<body>
+    <div class="form__wrapp">
+        <form action="#" method="POST">
+            <div class="tab">
+                <div class="form__header">
+                    <div class="tab-inner">
+                        <div class="header-content">
+                            <div class="header__text">
+                                <span class="client-name">
+                                    Harold Finch
+                                </span>
+                                <p>Your total</p>
+                            </div>
+                            <div class="header__price">
+                                $88
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-inner">
+                    <label for="card">
+                        Credit card number
+                    </label>
+                    <input id="card" class="card" type="text" name="card">
+                    <div class="date-info">
+                        <label for="">
+                            Expiration date
+                        </label>
+                        <select id="month" class="month" name="month">
+                            <option value="" label="Month"></option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="year" id="year" class="year">
+                            <option value="" label="Year"></option>
+                        </select>
+                    </div>
+                    <div class="cvv-info">
+                        <label for="cvv">
+                            CVV
+                        </label>
+                        <input type="text" id="cvv" class="cvv">
+                        <span class="cvv-comment">
+                            3 or 4 digits - <a class="form-link" href="javascript:void(0)">view example</a>
+                        </span>
+                    </div>
+
+                    <span class="bottom-line"></span>
+
+                    <button type="submit" class="payment">
+                        Pay
+                    </button>
+
+                    <div class="bottom-link">
+                        <a class="cancel form-link" href="javascript:void(0)" class="cancel">
+                            Cancel order
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

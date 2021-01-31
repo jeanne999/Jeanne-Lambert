@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Form. Experimental work.</title>
+</head>
+<body>
+    <header>
+        <h1>Тренировки на карантине</h1>
+    </header>
+    <main>
+        <h2>Опрос для построения программы домашних тренировок</h2>
+        <form id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+            <fieldset>
+            <legend>Общая информация о клиенте</legend>
+                <label class="w300" for="place">Место проведения тренировки</label>
+                    <input id="place" name="place" type="text" disabled placeholder="Жилое помещение"><br><br>
+                <label class="w300" for="want">Цель тренировок</label>
+                    <input id="want" name="want" type="text" readonly placeholder="Поддержание тонуса мышц"><br><br>
+                <label class="w300" for="c_name">Ваше имя <span class="req">*</span></label>
+                    <input id="c_name" name="c_name" type="text" required placeholder="Введите имя и фамилию"><br><br>
+                <label class="w300" for="mail">Электронная почта <span class="req">*</span></label>
+                    <input id="mail" name="mail" type="email" required placeholder="someone@domain.com"><br><br>
+                <label class="w300" for="brth">Дата рождения <span class="req">*</span></label>
+                    <input id="brth" name="brth" type="date" required><br><br>
+                <label class="w300" for="weight">Ваш вес <span class="req">*</span></label>
+                    <input id="weight" name="weight" type="number" required><br><br>
+                <label class="w300">Ваш пол<span class="req">*</span></label>
+                <label>
+                    <input name="sex" type="radio" value="Женщина" checked>&nbsp;Женский
+                </label>
+                <label>
+                    <input name="sex" type="radio" value="Мужчина">&nbsp;Мужской<br><br>
+                </label>
+                <label class="w300">Выберите интересующие вопросы </label>
+                <label>
+                    <input name="consult[]" type="checkbox" value="Тренировки">&nbsp;Тренировки
+                </label>
+                <label>
+                    <input name="consult[]" type="checkbox" value="Питание">&nbsp;Питание
+                </label>
+                <label>
+                    <input name="consult[]" type="checkbox" value="Растяжка">&nbsp;Растяжка
+                </label>
+                <label>
+                    <input name="consult[]" type="checkbox" value="Кардио-тренировки">&nbsp;Кардио-тренировки
+                </label>
+                <label>
+                    <input name="consult[]" type="checkbox" value="Распорядок дня">&nbsp;Распорядок дня
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительные сведения</legend>
+                <label class="w300" for="phone">Номер телефона</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+380*********"><br><br>
+                <label class="w300" for="net">Ссылка на соц. сеть</label>
+                    <input id="net" name="net" type="url" placeholder="http://instagram.com"><br><br>
+                <label class="w300" for="numb_train">Кол-во тренировок в неделю (1-7)</label>
+                    <input id="numb_train" name="numb_train" type="range"><br><br>
+                <label class="w300" for="time_train">Время начала тренировки</label>
+                    <input id="time_train" name="time_train" type="time"><br><br>
+                <label class="w300" for="color_doc">Тема для оформления рассылки</label>
+                    <input id="color_doc" name="color_doc" type="color"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Уточнения и коментарии</legend>
+                <label class="w300">Режим питания на данный момент</label>
+                    <select name="diet">
+                        <option selected disabled>Выберите рацион</option>
+                        <option>Белковая диета</option>
+                        <option>Углеводная диета</option>
+                        <option>Смешанный тип</option>
+                        <option>Нет четкого рациона</option>
+                    </select><br><br>
+                <label class="w300">Инвентарь в наличии</label>
+                    <select name="invent[]" multiple size="6">
+                        <option selected disabled>Выберите доступный инвентарь</option>
+                        <optgroup label="Специальный">
+                        <option>Гантели</option>
+                        <option>Гиря</option>
+                        <option>Штанга</option>
+                        <option>Эспандер</option>
+                        </optgroup>
+                        <optgroup label="Подручный">
+                            <option>Бутыли</option>
+                            <option>Резинки</option>
+                            <option>Рюкзак</option>
+                            <option>Блоки</option>
+                        </optgroup>
+                    </select><br><br>
+                <label class="w300" for="comment">Ваш комментарий</label>
+                <textarea id="comment" name="comment" cols="50" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Отправка данных</legend>
+                <button type="submit">Отправить</button>
+                <button type="reset">Сбросить</button>
+                <button>Кнопка</button>
+                <button disabled>Заблокирована</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Made by Jeanne Lambert</p>
+    </footer>
+</body>
+</html>

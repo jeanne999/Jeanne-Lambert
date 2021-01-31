@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0 auto  ;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PT Sans Regular';
+  src: url('../fonts/PTSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.header p,
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+.container {
+  max-width: 940px;
+  width: 90%;
+  margin: 70px auto;
+  text-align: center;
+}
+.container .header {
+  height: 120px;
+}
+.container .header p {
+  font-family: 'Montserrat Bold';
+  font-weight: 700;
+  font-size: 12px;
+  color: #958089;
+  letter-spacing: 3px;
+}
+.container .header h1 {
+  font-family: 'Montserrat Regular';
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color: #0ec8cb;
+  padding: 30px;
+}
+.container .promo_text {
+  padding: 0 220px;
+}
+.container .promo_text h2 {
+  font-family: 'PT Sans Regular';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #adadad;
+}
+.container .works {
+  margin-top: 100px;
+}
+.container .works .works_list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.container .works .works_list .works_items {
+  cursor: pointer;
+  padding: 60px 25px 90px 25px;
+  width: 25%;
+  background-color: #f7f7f7;
+  transition: background-color 0.2s ease;
+  border: 1px solid #ececec;
+}
+.container .works .works_list .works_items h3 {
+  font-family: 'Montserrat Regular';
+  font-weight: 600;
+  font-size: 21px;
+  margin: 50px 0 35px 0;
+  line-height: 24px;
+  display: block;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .works .works_list .works_items p {
+  font-family: 'PT Sans Regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #888888;
+}
+.container .works .works_list .works_items span {
+  display: inline-block;
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+.container .works .works_list .works_items span.works_items_icon-1 {
+  background-position: 2px 2px;
+}
+.container .works .works_list .works_items span.works_items_icon-2 {
+  background-position: -82px 2px;
+}
+.container .works .works_list .works_items span.works_items_icon-3 {
+  background-position: -167px 2px;
+}
+.container .works .works_list .works_items span.works_items_icon-4 {
+  background-position: -252px 2px;
+}
+.container .works .works_list .works_items:hover {
+  background-color: #0ec8cb;
+  border-color: #0ec8cb;
+}
+.container .works .works_list .works_items:hover * {
+  color: #fff;
+}
+.container .works .works_list .works_items:hover span.works_items_icon-1 {
+  background-position: 2px -84px;
+}
+.container .works .works_list .works_items:hover span.works_items_icon-2 {
+  background-position: -82px -84px;
+}
+.container .works .works_list .works_items:hover span.works_items_icon-3 {
+  background-position: -167px -84px;
+}
+.container .works .works_list .works_items:hover span.works_items_icon-4 {
+  background-position: -252px -84px;
+}

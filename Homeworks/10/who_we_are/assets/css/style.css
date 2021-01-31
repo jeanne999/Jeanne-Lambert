@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+.btn {
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "Lato Light", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Lato-Bold.woff") format("woff");
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 90%;
+}
+
+.section__top-width {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.lato-bold {
+  font-family: "Lato Bold", sans-serif;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+body .about-us {
+  padding: 100px 0;
+  font-family: "Lato Light", sans-serif;
+  font-weight: 300;
+}
+body .about-us .about-us__top {
+  text-align: center;
+  color: #3c3c3c;
+  margin-bottom: 55px;
+}
+body .about-us .about-us__top .about-us__title {
+  font-size: 34px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 55px;
+  letter-spacing: 4px;
+}
+body .about-us .about-us__top .about-us__title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 45px;
+  background-color: #dddbdb;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body .about-us .about-us__top .about-us__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+body .about-us .about-us__team {
+  display: flex;
+  justify-content: space-between;
+}
+body .about-us .about-us__team .about-us__team-item {
+  background-color: transparent;
+  width: calc(25.5% - 30px);
+  height: 271px;
+  perspective: 1000px;
+}
+body .about-us .about-us__team .about-us__team-item .about-us__name {
+  font-size: 18px;
+  color: #282528;
+}
+body .about-us .about-us__team .about-us__team-item .about-us__position {
+  font-size: 14px;
+  color: #646464;
+}
+body .about-us .about-us__team .about-us__team-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin-bottom: 16px;
+}
+body .about-us .about-us__team .about-us__team-item:hover .about-us__team-inner {
+  transform: rotateY(180deg);
+}
+body .about-us .about-us__team .about-us__photo,
+body .about-us .about-us__team .about-us__social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+body .about-us .about-us__team .fabout-us__photo {
+  background-color: #bbb;
+  color: black;
+}
+body .about-us .about-us__team .about-us__social {
+  background-color: #18b5dc;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .about-us .about-us__team .about-us__social .social__link {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  padding: 8px 0;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  background-color: #5ecbe7;
+  transition: all 0.3s ease;
+}
+body .about-us .about-us__team .about-us__social .social__link:hover {
+  background-color: #F5F8FA;
+  color: #1DA1F2;
+}

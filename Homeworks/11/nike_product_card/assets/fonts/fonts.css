@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto Condensed Light';
+    src: url('RobotoCondensed-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('RobotoCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

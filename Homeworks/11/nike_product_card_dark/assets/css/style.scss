@@ -1,0 +1,127 @@
+// import
+@import 'reset';
+// import
+// ----
+
+// common styles
+.container {
+    max-width: 686px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// common styles
+// ----
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Museo Sans Rounded', sans-serif;
+    color: #e1e1e1;
+
+    .product {
+        padding-top: 110px;
+
+        .product__card {
+            position: relative;
+            background-color: #111a28;
+            border-radius: 10px;
+            box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.8);
+            padding: 25px 22px;
+            .logo {
+                position: absolute;
+                top: 22px;
+                left: 19px;
+            }
+
+            .product__card-info {
+                display: flex;
+                align-items: center;
+
+                .product__card-photo {
+                    width: 65%;
+                    padding: 103px 68px 81px 15px;
+                }
+
+                .product__card-dots {
+                    position: absolute;
+                    left: 177px;
+                    bottom: 20px;
+                    width: 70px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .dots {
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                    }
+                    .dot1 {
+                        width: 15px;
+                        height: 15px;
+                        background-color: #1f273f;
+                        border: 2px solid #7e838b;
+                    }
+                    .dot2 {
+                        background-color: #fff;
+                    }
+                    .dot3 {
+                        background-color: #ed3333;
+                    }
+                    .dot4 {
+                        background-color: #29e3ea;
+                    }
+                }
+
+                .product__card-details {
+                    width: 35%;
+                    margin: 11px 11px;
+
+                    .product__card-title {
+                        font-size: 24px;
+                        font-weight: 100;
+                        line-height: 27px;
+                        letter-spacing: 0.4px;
+                        margin: 1px 0 1px -2px;
+                    }
+
+                    .product__card-description {
+                        font-size: 14px;
+                        line-height: 26px;
+                        margin-bottom: 17px;
+                    }
+
+                    .product-card__rate {
+                        margin-bottom: 21px;
+                    }
+
+                    .product-card__form {
+                        display: flex;
+                        margin-bottom: 28px;
+
+                    }
+
+                    .add-to-card {
+                        display: block;
+                        width: 185px;
+                        height: 40px;
+                        background-color: #202835;
+                        font-family: 'Museo Sans Rounded', sans-serif;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #e1e1e1;
+                        border: 1px solid #4f5560;
+                        cursor: pointer;
+                        transition: all .3s ease;
+                        outline: none;
+
+                        &:hover {
+                            background-color: lighten(#202835, 10%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

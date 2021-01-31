@@ -1,0 +1,132 @@
+@import "reset";
+@import "fonts";
+
+// COMMON STYLES START
+
+.container {
+    margin: 0 auto;
+    max-width: 1060px;
+    width: 90%;
+}
+
+// COMMON STYLES END
+
+// MAIN STYLES START
+body {
+    background-color: #464f54;
+    color: #000;
+    font-family: 'Georgia Regular', serif;
+    font-size: 28px;
+    line-height: 41px;
+
+    .redact__form {
+        width: 70.5%;
+        position: absolute;
+        top: 48px;
+        right: 0;
+        z-index: 10;
+
+        .redact__title {
+            padding: 32px 0 49px 60px;
+            background-color: #181818;
+
+            label {
+                display: inline-block;
+                font-family: 'Proxima Nova Regular', sans-serif;
+                color: #767676;
+                font-size: 15px;
+                line-height: 15px;
+                letter-spacing: 5.5px;
+                text-transform: uppercase;
+            }
+
+            #in_title {
+                display: inline-block;
+                width: 100%;
+                background-color: #181818;
+                border: none;
+                outline: none;
+                font-family: 'Playfair Display Regular', serif;
+                font-size: 48px;
+                color: #fff;
+                border-bottom: 3px solid #303030;
+                padding-bottom: 8px;
+            }
+        }
+
+        .redact__format {
+            width: calc(100% - 65px);
+            margin-left: 65px;
+            background-color: #f9be2d;
+            padding: 20px 273px 10px 40px;
+
+            .redact__icons {
+                display: flex;
+                justify-content: space-between;
+
+                .mdi {
+                    font-size: 40px;
+                    color: #f9dc94;
+
+                    &:hover,
+                    &:active {
+                        color: #fcfcfc;
+                    }
+                }
+            }
+        }
+    }
+
+    .paper {
+        background-color: #fff;
+        position: relative;
+        margin-top: 150px;
+        padding: 190px 120px 0 120px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            top: 0;
+            left: 66px;
+            background-color: #e8eced;
+        }
+
+        .paper__author {
+            font-size: 20px;
+            font-family: 'Proxima Nova Regular', sans-serif;
+            color: #b4b4b4;
+            font-size: 18px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+        .paper__title {
+            font-family: 'Futura PT Heavy', sans-serif;
+            font-size: 73px;
+            line-height: 70px;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .paper__description {
+            font-family: 'Georgia Italic', serif;
+            font-style: italic;
+            font-size: 30px;
+            line-height: 50px;
+            color: #8f8f8f;
+            margin-bottom: 40px;
+        }
+        .paper__text p {
+            padding-bottom: 30px;
+            line-height: 39px;
+            word-spacing: 4px;
+            & span {
+                font-family: 'Georgia Italic', serif;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+// MAIN STYLES END
